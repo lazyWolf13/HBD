@@ -1,0 +1,79 @@
+body {
+  min-height: 100vh;
+  background: linear-gradient(yellow, orange);
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh; /* Set to 100vh to cover the entire viewport height */
+}
+
+section img {
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+section::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background: linear-gradient(to top, rgb(251, 217, 64), transparent);
+  z-index: 1000;
+}
+
+#foto {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 600px;
+  height: auto;
+  background-position: center;
+}
+
+.sec {
+  text-align: justify;
+  color: #000;
+  position: relative;
+  padding: 20px;
+  background: rgb(251, 217, 64);
+  max-width: 800px;
+  margin: 20px;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 800px) {
+  #foto {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+/* style.css */
+.button-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #098cf7; /* Change the background color as needed */
+  color: #fff; /* Change the text color as needed */
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.button-link:hover {
+  background-color: #e30d0d; /* Change the background color on hover as needed */
+}

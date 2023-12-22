@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #2e8d86;
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+  padding: 20px;
+}
+
+#video_player {
+  width: 100%;
+  max-width: 860px; /* Set a maximum width for the video player */
+  margin: 0 auto; /* Center the video player */
+}
+
+.video {
+  width: 100%;
+  height: auto;
+}
+
+/* Responsive adjustments for smaller screens */
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  #video_player {
+    max-width: 100%; /* Make the video player full-width on smaller screens */
+  }
+}
+
+.button-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #098cf7; /* Change the background color as needed */
+  color: #fff; /* Change the text color as needed */
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.button-link:hover {
+  background-color: #09114d; /* Change the background color on hover as needed */
+}
